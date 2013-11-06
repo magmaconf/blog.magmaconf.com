@@ -32,7 +32,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem "crowdint_auth", path: "../crowdint_auth"
+gem "crowdint_auth", "0.1.2"
 gem "devise"
-gem "thin"
-gem "crowdblog", path: "../crowdblog"
+gem "crowdblog", "0.4.0"
+gem "puma"

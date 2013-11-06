@@ -1,24 +1,3 @@
-PATH
-  remote: ../crowdblog
-  specs:
-    crowdblog (0.3.0)
-      carrierwave (~> 0.9.0)
-      gravtastic (~> 3.2.6)
-      jbuilder
-      jquery-rails
-      rails (~> 4.0.0)
-      redcarpet (~> 3.0.0)
-      slim (~> 2.0.2)
-      state_machine (~> 1.2.0)
-
-PATH
-  remote: ../crowdint_auth
-  specs:
-    crowdint_auth (0.1.1)
-      devise (~> 3.1.1)
-      omniauth-google-apps
-      rails (~> 4.0.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -61,7 +40,19 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
-    daemons (1.1.9)
+    crowdblog (0.4.0)
+      carrierwave (~> 0.9.0)
+      gravtastic (~> 3.2.6)
+      jbuilder
+      jquery-rails
+      rails (~> 4.0.0)
+      redcarpet (~> 3.0.0)
+      slim (~> 2.0.2)
+      state_machine (~> 1.2.0)
+    crowdint_auth (0.1.2)
+      devise (~> 3.1.1)
+      omniauth-google-apps
+      rails (~> 4.0.0)
     devise (3.1.1)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -69,7 +60,6 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     erubis (2.7.0)
-    eventmachine (1.0.3)
     execjs (2.0.2)
     gravtastic (3.2.6)
     hashie (2.0.5)
@@ -101,6 +91,8 @@ GEM
       rack-openid (~> 1.3.1)
     orm_adapter (0.4.0)
     polyglot (0.3.3)
+    puma (2.6.0)
+      rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-openid (1.3.1)
       rack (>= 1.1.0)
@@ -150,10 +142,6 @@ GEM
     sqlite3 (1.3.8)
     state_machine (1.2.0)
     temple (0.6.7)
-    thin (1.6.0)
-      daemons (>= 1.0.9)
-      eventmachine (>= 1.0.0)
-      rack (>= 1.5.0)
     thor (0.18.1)
     thread_safe (0.1.3)
       atomic
@@ -175,15 +163,15 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
-  crowdblog!
-  crowdint_auth!
+  crowdblog (= 0.4.0)
+  crowdint_auth (= 0.1.2)
   devise
   jbuilder (~> 1.2)
   jquery-rails
+  puma
   rails (= 4.0.1)
   sass-rails (~> 4.0.0)
   sdoc
   sqlite3
-  thin
   turbolinks
   uglifier (>= 1.3.0)
