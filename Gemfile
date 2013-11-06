@@ -34,3 +34,4 @@ end
 
 gem "crowdint_auth", path: "../crowdint_auth"
 gem "devise"
+gem "thin"

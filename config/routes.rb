@@ -1,6 +1,11 @@
 BlogMagmaconfCom::Application.routes.draw do
-  devise_for :users
-  # The priority is based upon order of creation: first created -> highest priority.
+  devise_scope :user do
+    get 'google_apps_sign_in',
+        to: "crowdint_auth/omniauth_callbacks#google_apps_sign_in"
+  end
+
+  devise_for :users, controllers: { omniauth_callbacks: 'crowdint_auth/omniauth_callbacks' }
+  root to: "posts#index"
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
