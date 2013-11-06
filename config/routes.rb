@@ -5,6 +5,7 @@ BlogMagmaconfCom::Application.routes.draw do
   end
 
   devise_for :users, controllers: { omniauth_callbacks: 'crowdint_auth/omniauth_callbacks' }
+
   root to: "posts#index"
 
   mount Crowdblog::Engine => "/"
