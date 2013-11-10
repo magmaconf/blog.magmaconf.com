@@ -1,0 +1,14 @@
+%article
+  %header
+    %h2= post.title
+    %div.post-meta
+      %span.author= post.author_name
+      %ul
+        %li.category news
+        %li.comments 2
+        %li.votes 2
+      %time{}= I18n.l(post.published_at, format: '%d/%m/%y')
+  %div.post-content
+    = post.body
+  %footer
+    = link_to 'Read More...', '#'

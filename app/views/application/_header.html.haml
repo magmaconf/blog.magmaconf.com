@@ -1,0 +1,18 @@
+%p.days-left
+  20
+  %span left
+
+= link_to '/', class: 'logo' do
+  %img{ src: '', alt: 'Logo'}
+
+%menu{ label: 'categories' }
+  %span Categories
+  %li= link_to 'News', '#'
+  %li= link_to 'Updates', '#'
+  %li= link_to 'Speakers', '#'
+  %li= link_to 'Sponsors', '#'
+
+= form_tag '/search' do
+  = search_field_tag :search, '', results: 5
+  = submit_tag :submit
+

@@ -6,18 +6,20 @@
     = csrf_meta_tags
   %body
     %header
-      %nav
-        %ul
-          %li Link 1
+      = render 'header'
 
-    %main
-      = yield
-      %footer
-        Pagination goes here
-    %aside
-      Different navigations
+    .wrap
+      %main
+        = yield
+        %footer
+          %nav
+            = link_to 'prev', '#'
+            = link_to 'next', '#'
+          %img{ src: '' }
+      %aside
+        = render 'aside'
     %footer
-      %p Copyright Crowd
+      = render 'footer'
 
     = javascript_include_tag 'application'
     = yield :scripts
