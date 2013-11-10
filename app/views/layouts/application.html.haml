@@ -12,10 +12,8 @@
       %main
         = yield
         %footer
-          %nav
-            = link_to 'prev', '#'
-            = link_to 'next', '#'
-          %img{ src: '' }
+          = yield :main_footer
+        %img{ src: '', alt: 'banner' }
       %aside
         = render 'aside'
     %footer

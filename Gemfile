@@ -9,6 +9,7 @@ gem 'haml-rails'
 gem 'puma'
 gem 'jbuilder', '~> 1.2'
 gem 'jquery-rails'
+gem 'will_paginate'
 
 group :assets do
   gem 'coffee-rails', '~> 4.0.0'

@@ -6,7 +6,10 @@ BlogMagmaconfCom::Application.routes.draw do
 
   devise_for :users, controllers: { omniauth_callbacks: 'crowdint_auth/omniauth_callbacks' }
 
-  root to: "posts#index"
+  get '/:year/:month/:day/:id(.:format)', to: 'posts#show', as: 'post',
+      constraints: { year: /\d+/ }
 
-  mount Crowdblog::Engine => "/"
+  root to: 'posts#index'
+
+  mount Crowdblog::Engine => '/'
 end
