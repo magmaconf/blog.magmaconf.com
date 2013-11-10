@@ -1,0 +1,23 @@
+!!! html5
+%html
+  %head
+    %title Blog MagmaConf
+    = stylesheet_link_tag 'application', media: 'all'
+    = csrf_meta_tags
+  %body
+    %header
+      %nav
+        %ul
+          %li Link 1
+
+    %main
+      = yield
+      %footer
+        Pagination goes here
+    %aside
+      Different navigations
+    %footer
+      %p Copyright Crowd
+
+    = javascript_include_tag 'application'
+    = yield :scripts
