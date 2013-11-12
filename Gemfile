@@ -27,3 +27,4 @@ group :production do
 end
 
 gem 'cactu'
+gem 'font-awesome-sass'
