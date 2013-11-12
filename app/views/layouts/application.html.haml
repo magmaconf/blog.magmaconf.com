@@ -1,7 +1,10 @@
 !!! html5
 %html
   %head
+    %meta{charset: "utf-8"}
+    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1.0 maximum-scale=1.0'}
     %title Blog MagmaConf
+    %link{rel: 'stylesheet', href: "http://fonts.googleapis.com/css?family=Oswald:400,300,700|Roboto:100,300,500,400"}
     = stylesheet_link_tag 'application', media: 'all'
     = csrf_meta_tags
   %body
@@ -13,17 +16,13 @@
         %nav.eight-columns
           = render 'header'
 
-        %section.eight-columns
+        %main.eight-columns
+          = yield
+          %footer
+            = yield :main_footer
+          %img{ src: '', alt: 'banner' }
 
-    .container
-      %main
-        = yield
-        %footer
-          = yield :main_footer
-        %img{ src: '', alt: 'banner' }
-      %aside
-        = render 'aside'
-    %footer
+    %footer.container
       = render 'footer'
 
     = javascript_include_tag 'application'
