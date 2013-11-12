@@ -1,0 +1,67 @@
+// PARTIALS
+
+nav.eight-columns
+  text-align: right
+  margin-top: 20px
+  margin-bottom: 20px
+
+  menu
+    list-style: none
+    display: inline-block
+
+    li
+      display: inline-block
+
+      a
+        color: $fonts
+        padding: 10px 10px 10px 5px
+        display: inherit
+
+        i
+          width: 15px
+          height: 15px
+          padding: 3px
+          margin: 0 3px 0 10px
+          background: $icon-bkg
+          color: $gray
+          text-align: center
+          vertical-align: text-top
+          @include border_radius(50%)
+
+        &:hover i
+          background: $anchor-hover
+
+    li + li:before
+      content: " | "
+      font: 100 1.2em/1 'Oswald', 'Helvetica'
+      color: $fonts
+
+
+  form
+    display: inline-block
+
+    input
+      height: 30px
+      border: 1px solid $borders
+      font: 100 1.2em/1 'Oswald', sans-serif, 'Helvetica'
+
+    input[type="search"]
+      width: 200px
+      margin-left: 20px
+      font-family: 'Roboto', sans-serif
+      line-height: 1.8
+
+      &:focus
+        outline: 0
+        box-shadow: 0 0 5px $borders
+
+    input[type="submit"]
+      border: 0
+      background: $anchor
+      color: $white
+      text-transform: uppercase
+      padding: 0 10px
+      margin-left: -5px
+
+      &:hover
+        background: $anchor-hover

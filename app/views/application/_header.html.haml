@@ -1,10 +1,22 @@
 %menu{ label: 'categories' }
-  %li= link_to 'News', '#'
-  %li= link_to 'Updates', '#'
-  %li= link_to 'Speakers', '#'
-  %li= link_to 'Sponsors', '#'
+  %li
+    = link_to '#' do
+      %i.fa.fa-star
+      News
+  %li
+    = link_to '#' do
+      %i.fa.fa-rotate-left
+      Updates
+  %li
+    = link_to '#' do
+      %i.fa.fa-bullhorn
+      Speakers
+  %li
+    = link_to '#' do
+      %i.fa.fa-check
+      Sponsors
 
 = form_tag '/search' do
   = search_field_tag :search, '', results: 5
-  = submit_tag :submit
+  = submit_tag :search
 
