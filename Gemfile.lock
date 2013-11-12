@@ -29,6 +29,9 @@ GEM
     atomic (1.1.14)
     bcrypt-ruby (3.1.2)
     builder (3.1.4)
+    cactu (0.0.16)
+      sass (>= 3.2.0)
+      thor
     carrierwave (0.9.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
@@ -169,6 +172,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  cactu
   coffee-rails (~> 4.0.0)
   crowdblog (= 0.4.0)
   crowdint_auth (= 0.1.2)
