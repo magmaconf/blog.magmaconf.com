@@ -5,10 +5,17 @@
     = stylesheet_link_tag 'application', media: 'all'
     = csrf_meta_tags
   %body
-    %header
-      = render 'header'
+    .container
+      .row
+        %aside.three-columns
+          = render 'aside'
 
-    .wrap
+        %nav.eight-columns
+          = render 'header'
+
+        %section.eight-columns
+
+    .container
       %main
         = yield
         %footer
