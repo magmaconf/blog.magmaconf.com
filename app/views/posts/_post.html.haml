@@ -10,6 +10,8 @@
       %time{}= I18n.l(post.published_at, format: '%d/%m/%y')
   %div.post-content
     = index_view ? post.short_description : post.html_body
-  - if index_view
-    %footer
+  %footer
+    - if index_view
       = link_to 'Read More...', post_path(*post.url_params)
+    - else
+      = render 'social', post: post
