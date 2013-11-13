@@ -1,9 +1,21 @@
-= link_to '/', class: 'logo' do
-  %img{ src: '', alt: 'Logo'}
+.lath
+  .in
+    = link_to '/', class: 'santo' do
+      = image_tag 'santo.svg'
+    = link_to 'http://magmaconf.com', target: '_blank', class: 'logo' do
+      = image_tag 'magma.svg'
+.lath-down
+
+.mask
+  = image_tag 'mask.svg'
 
 %p.days-left
-  20
-  %span left
+  %span 200
+  Days to wear your mask
+
+.separator
+
+%h3 MagmaConf
 
 %img{ src: '', alt: 'banner1' }
 
