@@ -1,20 +1,21 @@
-.row
-  .twelve-columns
-    %h3 Another event by Crowd Interactive
-
-    %section#footer-sponsor
-      %h1 Sponsors
+.sponsors
+  .row
+    .three-columns
+      %span Our Sponsors
+    .eight-columns
       %ul
-        %li= link_to 'Sponsor1', '#'
-        %li= link_to 'Sponsor2', '#'
-        %li= link_to 'Sponsor2', '#'
+        %li
+          = link_to 'http://www.crowdint.com', target: '_blank' do
+            = image_tag 'crowd.svg'
+        %li
+          = link_to 'http://github.com', target: '_blank' do
+            = image_tag 'crowd.svg'
+        %li
+          = link_to 'http://rubycentral.org', target: '_balnk' do
+            = image_tag 'crowd.svg'
+        %li
+          = link_to '#' do
+            = image_tag 'crowd.svg'
 
-    %section#footer-following
-      %h1 Following us
-      %ul
-        %li= link_to 'Facebook', '#'
-        %li= link_to 'Twitter', '#'
-        %li= link_to 'Google Plus', '#'
-        %li= link_to 'Linked In', '#'
-
-    %small Crowd Interactive 2013, This site is protected by...
+.copy-right
+  %small Crowd Interactive 2013, This site is protected by...
