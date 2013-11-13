@@ -15,41 +15,54 @@
 
 .separator
 
-%h3 MagmaConf
+%article
+  %h3 MagmaConf
+  %p
+    Lorem ipsum dolor sit amet, malis vivendum insolens te vim. Ignota delectus ex mei. Audire tritani fuisset id sit, minim antiopam ius te, aeque copiosae ea eum.
+  = link_to 'Read more', '#'
 
-%img{ src: '', alt: 'banner1' }
+.separator
 
-%section#what
-  %h1 What is MAGMACONF?
-  %p Loren ipsum dolor
-  = link_to 'Read More', '#'
+%section
+  %h3 Stay tuned...
+  .social
+    = link_to 'http://www.facebook.com/magmaconf', target: '_blank' do
+      %i.fa.fa-facebook
+  .social
+    = link_to 'http://twitter.com/magmaconf', target: '_blank' do
+      %i.fa.fa-twitter
+  .social
+    = link_to 'https://plus.google.com/+Magmaconf/posts', target: '_blank' do
+      %i.fa.fa-google-plus
 
-%section#social
-  %h1 Following Us
-  %ul
-    %li= link_to 'Facebook', '#'
-    %li= link_to 'Twitter', '#'
-    %li= link_to 'Google Plus', '#'
-    %li= link_to 'Linked In', '#'
+.separator
 
-%section#organizer
-  %h1 Magmaconf organizer
-  %p Lorem ipsum dolor
-  = link_to 'Read More', '#'
+%article
+  %h3 Staff
+  %p
+    Lorem ipsum dolor sit amet, malis vivendum insolens te vim. Ignota delectus ex mei. Audire tritani fuisset id sit, minim antiopam ius te, aeque copiosae ea eum.
+  = link_to 'Read more', '#'
 
-%section#sponsor
-  %h1 Magmaconf Sponsored by
-  %ul
-    %li= link_to 'Sponsor1', '#'
-    %li= link_to 'Sponsor2', '#'
-    %li= link_to 'Sponsor3', '#'
-  = link_to 'Read More', '#'
+.separator
 
-%section#related
-  %h1 Following into
-  %ul
-    %li
-      %a blog 1
-    %li
-      %a blog2
-  = link_to 'Read More', '#'
+%article
+  %h3 Sponsors
+  %p
+    Lorem ipsum dolor sit amet, malis vivendum insolens te vim. Ignota delectus ex mei. Audire tritani fuisset id sit, minim antiopam ius te, aeque copiosae ea eum.
+  = link_to 'Read more', '#'
+
+.separator
+
+%article
+  %h3 Links
+  %p
+    Lorem ipsum dolor sit amet, malis vivendum insolens te vim. Ignota delectus ex mei. Audire tritani fuisset id sit, minim antiopam ius te, aeque copiosae ea eum.
+  = link_to 'Read more', '#'
+
+.separator
+
+%footer
+  %p
+    An event organized by
+    = link_to 'http://www.crowdint.com', target: '_blank' do
+      = image_tag 'crowd.svg'

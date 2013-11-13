@@ -1,51 +1,95 @@
 // ASIDE PARTIAL
 
-.lath
-  background: $white
-  text-align: center
+aside.three-columns
+  .lath
+    background: $white
+    text-align: center
 
-  .in
-    width: 95%
-    border-left: 1px solid $gray
-    border-right: 1px solid $gray
-    margin: auto
+    .in
+      width: 95%
+      border-left: 1px solid $gray
+      border-right: 1px solid $gray
+      margin: auto
 
-    .santo, .logo
-      display: inline-block
+      .santo, .logo
+        display: inline-block
 
-    .logo
-      margin: 20px auto 45px
+      .logo
+        margin: 20px auto 45px
 
-.lath-down
-  width: 100%
-  height: 60px
-  background: asset-url('liston_bg.png') no-repeat center
-  position: relative
-  top: -43px
+  .lath-down
+    width: 100%
+    height: 60px
+    background: asset-url('liston_bg.png') no-repeat center
+    position: relative
+    top: -43px
 
-.mask
-  width: 60px
-  height: 60px
-  display: block
-  text-align: center
-  margin-top: -45px
-  margin-left: auto
-  margin-right: auto
-  @include border_radius(50%)
-  border: 1px solid $fonts
+  .mask
+    width: 60px
+    height: 60px
+    display: block
+    text-align: center
+    margin-top: -45px
+    margin-left: auto
+    margin-right: auto
+    @include border_radius(50%)
+    border: 1px solid $fonts
 
-  img
-    width: 70%
-    padding: 8px
+    img
+      width: 70%
+      padding: 8px
 
-.days-left
-  font-size: 1.2em
-  padding: 10px 0
+  .days-left
+    font-size: 1.2em
+    padding: 10px 0
+    text-align: center
 
-  span
-    font-size: 1.6em
-    vertical-align: sub
+    span
+      font-size: 1.6em
+      vertical-align: sub
 
-h3
-  padding: 20px 0 10px
-  border-bottom: 1px solid $borders
+  article
+    margin-bottom: 10px
+
+  h3
+    padding: 20px 0 10px
+    border-bottom: 1px solid $borders
+
+  p
+    padding: 10px 0
+
+  section
+    overflow: hidden
+
+    .social
+      width: 33.333333%
+      overflow: hidden
+      float: left
+      text-align: center
+      margin: 10px 0
+
+      a
+        width: 40px
+        height: 40px
+        background: $icon-bkg
+        display: inline-block
+        @include border_radius(50%)
+
+        i
+          padding: 13px
+          color: $fonts
+
+  footer
+    padding: 15px 0 20px
+    border-bottom: 1px solid $borders
+    margin-bottom: 30px
+
+    p
+      font-family: 'Oswald', sans-serif
+      text-transform: uppercase
+
+      a
+        display: inline-block
+        margin-left: 20px
+        vertical-align: middle
+        margin-top: -5px
