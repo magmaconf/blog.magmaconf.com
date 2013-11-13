@@ -28,3 +28,5 @@ end
 
 gem 'cactu'
 gem 'font-awesome-sass'
+
+gem 'rails_12factor'
