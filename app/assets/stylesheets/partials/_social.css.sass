@@ -1,0 +1,31 @@
+// SOCIAL PARTIAL
+
+footer
+  .share
+    list-style: none
+
+    li.i-share, .p-share
+      display: inline-block
+      padding: 10px
+      font: 100 1em 'Oswald', sans-serif
+      text-transform: uppercase
+
+      a
+        width: 20px
+        height: 20px
+        background: $white
+        color: $fonts
+        border: 1px solid $anchor
+        padding: 10px
+        text-align: center
+        line-height: 1
+        margin-right: 0
+        @include border_radius(50%)
+
+        i
+          vertical-align: middle
+
+        &:hover
+          background: $anchor-hover
+          color: $white
+          border: 1px solid $anchor-hover
