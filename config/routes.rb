@@ -12,4 +12,6 @@ BlogMagmaconfCom::Application.routes.draw do
   root to: 'posts#index'
 
   mount Crowdblog::Engine => '/'
+
+  match '(/category/:category)(/page/:page)', to: 'posts#index', via: 'get'
 end
