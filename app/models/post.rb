@@ -1,6 +1,8 @@
 class Post < Crowdblog::Post
   SHORT_DESCRIPTION_SIZE = 500
 
+  scope :by_category, ->(category) { where(category: category) }
+
   def short_description
     description = ""
     paragraphs = body.split("\n")
