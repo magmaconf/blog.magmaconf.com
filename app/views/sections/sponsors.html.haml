@@ -1,0 +1,9 @@
+%article.spons
+  .zig-zag
+  .content
+    %ul
+      - @sponsors.each do |sponsor|
+        %li
+          = link_to "#{sponsor.first[:url]}", target: '_blank' do
+            = image_tag "#{sponsor.first[:img]}"
+  .zig-zag-down
