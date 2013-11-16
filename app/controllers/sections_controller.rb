@@ -1,7 +1,4 @@
 class SectionsController < ApplicationController
-  def magmaconf
-  end
-
   def venue
   end
 
