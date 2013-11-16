@@ -14,4 +14,9 @@ BlogMagmaconfCom::Application.routes.draw do
   mount Crowdblog::Engine => '/'
 
   match '(/category/:category)(/page/:page)', to: 'posts#index', via: 'get'
+
+  match '/sections/magmaconf', to: 'sections#magmaconf', via: 'get'
+  match '/sections/venue', to: 'sections#venue', via: 'get'
+  match '/sections/sponsors', to: 'sections#sponsors', via: 'get'
+  match '/sections/links', to: 'sections#links', via: 'get'
 end
