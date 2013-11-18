@@ -17,4 +17,17 @@
 $(document).ready(function() {
   $('.previous_page').append('<i class="prev"></i>')
   $('.next_page').append('<i class="next"></i>')
+
+  $('#main-menu').click(function(e) {
+    e.preventDefault();
+    $('.menu-hidden').slideToggle();
+
+  });
+/*
+    if ($('.menu-hidden').is(':visible')) {
+      $('#main-menu').css('background', '#000');
+    } else {
+      $('#main-menu').css('background', '')
+    }
+*/
 });

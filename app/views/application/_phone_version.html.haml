@@ -1,0 +1,45 @@
+.lath
+  .lath-in
+    = link_to '/' do
+      = image_tag 'magma.svg'
+  .lath-bottom
+
+%nav
+  = link_to '#', id: 'main-menu' do
+    %i.fa.fa-align-justify
+
+.twelve-columns.menu-hidden
+  .left
+    %header Sectinos
+    %ul
+      %li
+        = link_to 'MagmaConf', 'http://magmaconf.com', target: '_blank'
+      %li
+        = link_to 'Venue', '/sections/venue'
+      %li
+        = link_to 'Sponsors', '/sections/sponsors'
+      %li
+        = link_to 'Links', '/sections/links'
+  .right
+    %header Categories
+    %ul
+      %li
+        = link_to 'News', '/category/news'
+      %li
+        = link_to 'Judges', '/category/judges'
+      %li
+        = link_to 'Speakers', '/category/speakers'
+      %li
+        = link_to 'Sponsors', '/category/sponsors'
+  .down
+    %header Stay tuned
+    %ul
+      %li
+        = link_to 'http://www.facebook.com/magmaconf', target: '_blank' do
+          %i.fa.fa-facebook
+      %li
+        = link_to 'http://twitter.com/magmaconf', target: '_blank' do
+          %i.fa.fa-twitter
+      %li
+        = link_to 'https://plus.google.com/+Magmaconf/posts', target: '_blank' do
+          %i.fa.fa-google-plus

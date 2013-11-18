@@ -3,3 +3,25 @@
   @include grid_generator($columns - 10, $gutter - 10)
   @include grid_offset($columns - 10, $gutter - 10)
   @include grid_centered($columns - 10, $gutter - 10)
+
+  header.twelve-columns
+    display: none
+
+  .santo
+    img
+      width: 75%
+
+  main.nine-columns
+    .content header
+      .top
+        h2
+          width: 80%
+          padding-left: 10px
+
+        i
+          width: 30px
+          height: 30px
+          font-size: 1.7em
+
+  footer.container .sponsors ul li
+    margin-bottom: 20px

@@ -1,3 +1,51 @@
 // RESPONSIVE_SHORT
 @media screen and (max-width: 767px)
   @include grid_generator
+
+  aside.three-columns,
+  nav.nine-columns
+    display: none
+
+  header.twelve-columns
+    display: block
+
+    nav a
+      margin-left: 20%
+
+  main.nine-columns
+    .content header
+      .top
+        h2
+          width: 80%
+          padding-left: 10px
+
+        i
+          width: 30px
+          height: 30px
+          font-size: 1.7em
+
+      .post-meta
+        .author, .stars, time
+          width: 100% !important
+
+        .author, time
+          text-align: center !important
+
+  footer.container .sponsors
+    .row
+      text-align: center !important
+
+    ul li
+      margin-bottom: 20px
+
+@media screen and (min-width: 480px) and (max-width: 767px)
+  header.twelve-columns
+    nav a
+      margin-left: 60%
+
+    .menu-hidden
+      .left
+        width: 100%
+
+      .right
+        width: 100%

@@ -9,13 +9,11 @@
       display: inline-block
       width: 40px
       height: 40px
-      background: $white
       padding: 10px
       border: 1px solid $borders
       margin: 20px
       vertical-align: middle
       @include border_radius(50%)
-      box-shadow: 0 0 0 5px $white
 
       i
         margin: 9px auto
@@ -30,6 +28,9 @@
         @extend .prev
         background: asset-url('right-big.svg')
     a
+      background: $white
+      box-shadow: 0 0 0 5px $white
+
       &:hover
         background: $borders
         color: $white

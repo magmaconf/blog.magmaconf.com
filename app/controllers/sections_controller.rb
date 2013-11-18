@@ -15,6 +15,10 @@ class SectionsController < ApplicationController
       [
         url: 'http://github.com',
         img: 'github.svg'
+      ],
+      [
+        url: 'http://github.com',
+        img: 'github.svg'
       ]
     ]
   end
