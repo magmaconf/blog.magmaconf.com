@@ -23,14 +23,22 @@
   .right
     %header Categories
     %ul
-      %li
-        = link_to 'News', '/category/news'
-      %li
-        = link_to 'Judges', '/category/judges'
-      %li
-        = link_to 'Speakers', '/category/speakers'
-      %li
-        = link_to 'Sponsors', '/category/sponsors'
+      %li.categories
+        = link_to '/category/news' do
+          %i.fa.fa-star
+          News
+      %li.categories
+        = link_to '/category/judges' do
+          %i.fa.fa-rotate-left
+          Judges
+      %li.categories
+        = link_to '/category/speakers' do
+          %i.fa.fa-bullhorn
+          Speakers
+      %li.categories
+        = link_to '/category/sponsors' do
+          %i.fa.fa-check
+          Sponsors
   .down
     %header Stay tuned
     %ul
