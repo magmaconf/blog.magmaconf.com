@@ -18,10 +18,20 @@ $(document).ready(function() {
   $('.previous_page').append('<i class="prev"></i>')
   $('.next_page').append('<i class="next"></i>')
 
-  $('#main-menu').click(function(e) {
-    e.preventDefault();
-    $('.menu-hidden').slideToggle();
+  var state = true;
 
+  $('#main-menu').click(function(e) {
+    state = !state
+
+    if(state) {
+      e.preventDefault();
+      $('#main-menu').css({background: '#fff', color: '#1fb6b4'});
+      $('.menu-hidden').slideToggle();
+    } else {
+      e.preventDefault();
+      $('#main-menu').css({background: '#1fb6b4', color: '#fff'});
+      $('.menu-hidden').slideToggle();
+    }
   });
 /*
     if ($('.menu-hidden').is(':visible')) {
