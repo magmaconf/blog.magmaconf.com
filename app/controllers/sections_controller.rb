@@ -24,5 +24,23 @@ class SectionsController < ApplicationController
   end
 
   def links
+    @links = [
+      [
+        url: 'http://github.com',
+        text: 'Github'
+      ],
+      [
+        url: 'http://github.com',
+        text: 'Github'
+      ],
+      [
+        url: 'http://github.com',
+        text: 'Github'
+      ],
+      [
+        url: 'http://github.com',
+        text: 'Github'
+      ]
+    ]
   end
 end

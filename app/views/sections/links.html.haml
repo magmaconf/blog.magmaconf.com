@@ -1,0 +1,9 @@
+%article.links
+  .zig-zag
+  .content
+    %ul
+      - @links.each do |linker|
+        %li
+          = link_to "#{linker.first[:url]}", target: '_blank' do
+            = linker.first[:text]
+  .zig-zag-down
