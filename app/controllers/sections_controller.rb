@@ -16,6 +16,14 @@ class SectionsController < ApplicationController
       [
         url: 'http://crowdint.com',
         text: 'Crowd Interactive'
+      ],
+      [
+        url: 'http://store.crowdint.com',
+        text: 'Crowd Store'
+      ],
+      [
+        url: 'http://magmaconf.com',
+        text: 'MagmaConf 2014'
       ]
     ]
   end
