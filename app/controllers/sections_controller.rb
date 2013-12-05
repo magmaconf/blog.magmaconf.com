@@ -5,20 +5,8 @@ class SectionsController < ApplicationController
   def sponsors
     @sponsors = [
       [
-        url: 'http://github.com',
-        img: 'github.svg'
-      ],
-      [
-        url: 'http://github.com',
-        img: 'github.svg'
-      ],
-      [
-        url: 'http://github.com',
-        img: 'github.svg'
-      ],
-      [
-        url: 'http://github.com',
-        img: 'github.svg'
+        url: 'http://crowdint.com',
+        img: 'crowd-sponsor.svg'
       ]
     ]
   end
@@ -26,20 +14,8 @@ class SectionsController < ApplicationController
   def links
     @links = [
       [
-        url: 'http://github.com',
-        text: 'Github'
-      ],
-      [
-        url: 'http://github.com',
-        text: 'Github'
-      ],
-      [
-        url: 'http://github.com',
-        text: 'Github'
-      ],
-      [
-        url: 'http://github.com',
-        text: 'Github'
+        url: 'http://crowdint.com',
+        text: 'Crowd Interactive'
       ]
     ]
   end
