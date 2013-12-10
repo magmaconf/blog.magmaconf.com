@@ -33,6 +33,8 @@ $(document).ready(function() {
       $('.menu-hidden').slideToggle();
     }
   });
+
+  $('.post').first().append('<a href="http://www.crowdint.com" target="_blank" class="banner"></a>');
 /*
     if ($('.menu-hidden').is(':visible')) {
       $('#main-menu').css('background', '#000');
