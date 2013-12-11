@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
-gem 'rails', '4.0.1'
+gem 'rails', '4.0.2'
 
 gem 'crowdblog', '0.4.0'
 gem 'crowdint_auth', '0.1.2'
