@@ -34,7 +34,10 @@ $(document).ready(function() {
     }
   });
 
-  $('.post').first().append('<a href="http://www.crowdint.com" target="_blank" class="banner"></a>');
+  //$('.post').first().append('<a href="http://www.crowdint.com" target="_blank" class="banner"></a>');
+
+  $('.top i.fa-check').addClass('fa-flag');
+  $('.top i.fa-rotate-left').addClass('fa-legal');
 /*
     if ($('.menu-hidden').is(':visible')) {
       $('#main-menu').css('background', '#000');
