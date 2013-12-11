@@ -8,7 +8,7 @@ class Post < Crowdblog::Post
     paragraphs = body.split("\n")
     paragraphs.cycle do |p|
       description << p << "\n"
-      break if description.size > SHORT_DESCRIPTION_SIZE
+      break if description.size > SHORT_DESCRIPTION_SIZE || description.size == body.size
     end
     @@renderer ||= Redcarpet::Markdown.new(Redcarpet::Render::HTML,
                                            :autolink => true, :space_after_headers => true)
