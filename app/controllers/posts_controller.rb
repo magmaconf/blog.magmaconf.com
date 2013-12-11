@@ -8,6 +8,6 @@ class PostsController < ApplicationController
 
   def show
     @post = ::Post.find_by_permalink(params[:id])
-    @cat = {news: 'star', judges: 'rotate-left', speakers: 'bullhorn', sponsors: 'check'}
+    @cat = {news: 'star', judges: 'legal', speakers: 'bullhorn', sponsors: 'flag'}
   end
 end
