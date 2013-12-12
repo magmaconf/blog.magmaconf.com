@@ -4,11 +4,28 @@
     %title Blog MagmaConf #{ yield :page_title }
     %meta{ charset: 'utf-8' }
     %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1.0 maximum-scale=1.0' }
-    = yield :meta
+    %meta{name: "author", content: "Crowd Interactive - http://crowdint.com"}
+    %meta{content: ' MagmaConf: Blog', property: 'og:title'}
+    %meta{content: 'http://blog.magmaconf.com', property: 'og:url'}
+    %meta{content: 'Blog of MagmaConf 2014. MagmaConf is an annual Web Development Conference happening June 4, 5 & 6 2014 in the coastline city Manzanillo, Colima, Mexico', property: 'og:description'}
+    %meta{content: 'Blog of MagmaConf 2014. MagmaConf is an annual Web Development Conference happening June 4, 5 & 6 2014 in the coastline city Manzanillo, Colima, Mexico.', name: 'description'}
+    %meta{name: "keywords", content: "call for papers, magmaconf, rails, ruby, UI, UX, web development, frontend, manzanillo, conference, 2014, june, junio, github, sinatra, design, conferencia, tecnologia"}
     %link{ rel: 'stylesheet', href: 'http://fonts.googleapis.com/css?family=Oswald:400,300,700|Roboto:100,300,500,400' }
     %link{ rel: 'shortcut icon', type: 'image/vnd.microsoft.icon', href: "#{image_path 'favicon.ico'}" }
     = stylesheet_link_tag 'application', media: 'all'
     = csrf_meta_tags
+
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-22515126-5']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
   %body
     .container
       .row
