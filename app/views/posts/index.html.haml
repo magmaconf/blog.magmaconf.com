@@ -4,3 +4,7 @@
 
 = render @posts, index_view: true
 
+:javascript
+  $(document).ready(function() {
+    $('.banner').html('<ul><li>#{image_tag('banner-desktop.png').html_safe}</li></ul>');
+  });
