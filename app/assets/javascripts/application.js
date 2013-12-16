@@ -38,12 +38,4 @@ $(document).ready(function() {
 
   $('.top i.fa-check').addClass('fa-flag');
   $('.top i.fa-rotate-left').addClass('fa-legal');
-/*
-    if ($('.menu-hidden').is(':visible')) {
-      $('#main-menu').css('background', '#000');
-    } else {
-      $('#main-menu').css('background', '')
-    }
-*/
 });
-
