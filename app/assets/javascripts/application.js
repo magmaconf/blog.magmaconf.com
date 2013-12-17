@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require_three .
 
 $(document).ready(function() {
   $('.previous_page').append('<i class="prev"></i>')
