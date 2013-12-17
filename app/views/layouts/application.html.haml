@@ -47,3 +47,20 @@
       = render 'footer'
 
     = yield :scripts
+
+    :javascript
+      $(document).ready(function() {
+        $('.banner').html('' +
+          '<ul id="scene-desktop"><li class="layer" data-depth="0">#{image_tag('banner-desktop.png').html_safe}</li><li class="layer" data-depth="-0.10">#{image_tag('banner-desktop-eyes.png').html_safe}</li></ul>' +
+          '<ul id="scene-tablet"><li class="layer" data-depth="0">#{image_tag('banner-tablet.png').html_safe}</li><li class="layer" data-depth="0.10">#{image_tag('banner-tablet-eyes.png').html_safe}</li></ul>' +
+          '<ul id="scene-phone"><li class="layer" data-depth="0">#{image_tag('banner-phone.png').html_safe}</li><li class="layer" data-depth="0.10">#{image_tag('banner-phone-eyes.png').html_safe}</li></ul>'
+        );
+      });
+
+    = javascript_include_tag 'jquery_parallax'
+    :javascript
+      $(document).ready(function() {
+        $('#scene-desktop').parallax();
+        $('#scene-tablet').parallax();
+        $('#scene-phone').parallax();
+      });
