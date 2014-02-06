@@ -38,4 +38,19 @@ $(document).ready(function() {
 
   $('.top i.fa-check').addClass('fa-flag');
   $('.top i.fa-rotate-left').addClass('fa-legal');
+
+  // Put color to each section link
+  var location = window.location.pathname
+  if (location == '/category/news') {
+    $('.news i').css('background', '#312926');
+  }
+  if (location == '/category/judges') {
+    $('.judges i').css('background', '#312926');
+  }
+  if (location == '/category/speakers') {
+    $('.speakers i').css('background', '#312926');
+  }
+  if (location == '/category/sponsors') {
+    $('.sponsors i').css('background', '#312926');
+  }
 });
