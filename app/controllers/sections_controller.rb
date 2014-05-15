@@ -3,12 +3,6 @@ class SectionsController < ApplicationController
   end
 
   def sponsors
-    @sponsors = [
-      [
-        url: 'http://crowdint.com',
-        img: 'crowd-sponsor.svg'
-      ]
-    ]
   end
 
   def links
