@@ -45,12 +45,28 @@
     ul
       padding-left: 8%
 
-  footer.container .sponsors
-    .row
-      text-align: center !important
+  footer.container
+    .sponsors
+      .row
+        text-align: center
+      span
+        padding-bottom: 0
 
-    ul li
-      margin-bottom: 20px
+  #travis .sponsor-image
+    bottom: 0px
+
+  #toptal .sponsor-image
+    bottom: 0px
+
+  #code-climate .sponsor-image
+    top: 0px
+
+  #empleos-ti .sponsor-image
+    bottom: 0px
+
+  #honey-badger .sponsor-image
+    top: 0px
+
 
 @media screen and (min-width: 480px) and (max-width: 767px)
   header.twelve-columns
@@ -63,3 +79,20 @@
 
       .right
         width: 100%
+
+  footer.container
+    .sponsor
+      width: 32%
+
+  #travis, #honey-badger, #empleos-ti
+    margin-top: 25px
+
+@media screen and (max-width: 479px)
+
+  footer.container
+    .sponsor
+      padding: 20px 0
+      width: 48%
+
+  #onelogin .sponsor-image
+    top: 0px
