@@ -9,6 +9,8 @@ BlogMagmaconfCom::Application.routes.draw do
   get '/:year/:month/:day/:id(.:format)', to: 'posts#show', as: 'post',
       constraints: { year: /\d+/ }
 
+  get 'preview/:id', to: 'previews#show', as: 'preview'
+
   root to: 'posts#index'
 
   mount Crowdblog::Engine => '/'
