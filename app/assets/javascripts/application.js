@@ -12,9 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_three .
+//= require jquery.validate
+//= require_tree .
 
 $(document).ready(function() {
+
   $('.previous_page').append('<i class="prev"></i>')
   $('.next_page').append('<i class="next"></i>')
 

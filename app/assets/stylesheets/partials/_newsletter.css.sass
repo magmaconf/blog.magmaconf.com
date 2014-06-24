@@ -23,6 +23,13 @@
     font-weight: 200
     text-transform: uppercase
 
+    &.error
+      display: block
+      font-size: 75%
+      font-family: sans-serif
+      color: #a94442
+      margin-bottom: 10px
+
   input
     border: 1px solid #c6c2bd
     box-sizing: border-box
@@ -31,6 +38,12 @@
     margin: 10px auto
     padding: 0 10px
     width: 99%
+
+    &.error
+      outline-color: #a94442
+      outline-offset: -2px
+      outline-style: auto
+      outline-width: 3px
 
   input[type=submit]
     background-color: #1fb6b4
@@ -44,3 +57,45 @@
     margin: 20px auto 0
     text-transform: uppercase
     width: 135px
+
+
+#message-box
+  position: relative
+
+  span
+    font-weight: 100
+
+  border-radius: 4px
+  display: none
+  max-width: 1080px
+  padding: 5px
+
+  &.success
+    background-color: #dff0d8
+    border: 1px solid #d6e9c6
+    color: #3c763d
+
+    .close
+      color: #BED3B8
+
+      &:hover
+        color: #3c763d
+
+  &.error
+    background-color: #f2dede
+    border: 1px solid #ebccd1
+    color: #a94442
+
+    .close
+      color: #CCB7B9
+      &:hover
+        color: #a94442
+
+  .close
+    position: absolute
+    top: 1px
+    right: 0
+    padding: 4px
+    background: transparent
+    cursor: pointer
+

@@ -19,13 +19,16 @@
   %h3 Newsletter
   %p Stay up-to-date on all things magma conf.
   %p Subscribe to our newsletter.
-  %form
+  = form_tag '/newsletter', id: 'newsletter-form', remote: true do
+    %p#message-box{ style: 'display: none;' }
+      %span.message
+      %span.close x
     %fieldset
-      %label{ for: 'name' } Your Name
-      %input{ name: 'name', type: 'text', require: true }
-      %label{ for: 'email' } E-mail
-      %input{ name: 'email', type: 'email', required: true }
-      %input{ value: 'Subscribe', type: 'submit' }
+      = label_tag(:name, 'Your name')
+      = text_field_tag(:name)
+      = label_tag(:email, 'E-mail')
+      = email_field_tag(:email)
+      = submit_tag 'Subscribe', data: { disable_with: 'Wait...' }
 
 .separator
 

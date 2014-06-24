@@ -9,9 +9,10 @@ gem 'crowdint_auth', '0.1.2'
 gem 'devise'
 gem 'fog'
 gem 'haml-rails'
-gem 'puma'
 gem 'jbuilder', '~> 1.2'
 gem 'jquery-rails'
+gem 'mandrill_mailer'
+gem 'puma'
 gem 'will_paginate'
 
 group :assets do

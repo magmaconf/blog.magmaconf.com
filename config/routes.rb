@@ -11,6 +11,8 @@ BlogMagmaconfCom::Application.routes.draw do
 
   get 'preview/:id', to: 'previews#show', as: 'preview'
 
+  post 'newsletter', to: 'newsletter_subscriptions#create'
+
   root to: 'posts#index'
 
   mount Crowdblog::Engine => '/'
