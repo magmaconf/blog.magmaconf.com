@@ -15,14 +15,18 @@
 
 .separator
 
-%article
-  %h3 MagmaConf
-  %p
-    Don't miss your chance to attend Mexico's leading web development conference. Register now!
-  .register
-    %img.shadow{ src: "#{ image_path 'shadow.png' }" }
-    %a.btn-register{ href: "https://www.eventbrite.com/e/magmaconf-2014-tickets-10374322879", target: "_blank" }
-      %img{ src: "#{ image_path 'register-now.svg' }" }
+%article.newsletter
+  %h3 Newsletter
+  %p Stay up-to-date on all things magma conf.
+  %p Subscribe to our newsletter.
+  %form
+    %fieldset
+      %label{ for: 'name' } Your Name
+      %input{ name: 'name', type: 'text', require: true }
+      %label{ for: 'email' } E-mail
+      %input{ name: 'email', type: 'email', required: true }
+      %input{ value: 'Subscribe', type: 'submit' }
+
 .separator
 
 %section
