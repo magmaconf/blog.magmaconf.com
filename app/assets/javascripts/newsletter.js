@@ -5,7 +5,7 @@ $(document).ready(function() {
 
   var showSuccessMessage = function() {
     $messageBox.addClass('success');
-    $message.text('You request has been sent');
+    $message.text('Thanks for subscribing!');
   };
 
   var showErrorMessage = function() {
