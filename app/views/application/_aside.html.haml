@@ -9,20 +9,28 @@
 .mask
   = image_tag 'mask.svg'
 
-%p.days-left
-  %span= remaining_days
-  Days to wear your mask
+%p.organized-by
+  proudly organized by
+  = link_to 'http://www.crowdint.com', target: '_blank' do
+    = image_tag 'crowd-sponsor.svg'
 
 .separator
 
-%article
-  %h3 MagmaConf
-  %p
-    Don't miss your chance to attend Mexico's leading web development conference. Register now!
-  .register
-    %img.shadow{ src: "#{ image_path 'shadow.png' }" }
-    %a.btn-register{ href: "https://www.eventbrite.com/e/magmaconf-2014-tickets-10374322879", target: "_blank" }
-      %img{ src: "#{ image_path 'register-now.svg' }" }
+%article.newsletter
+  %h3 Newsletter
+  %p Stay up-to-date on all things magma conf.
+  %p Subscribe to our newsletter.
+  = form_tag '/newsletter', id: 'newsletter-form', remote: true do
+    %p#message-box{ style: 'display: none;' }
+      %span.message
+      %span.close x
+    %fieldset
+      = label_tag(:name, 'Your name')
+      = text_field_tag(:name)
+      = label_tag(:email, 'E-mail')
+      = email_field_tag(:email)
+      = submit_tag 'Subscribe', data: { disable_with: 'Wait...' }
+
 .separator
 
 %section
