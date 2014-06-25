@@ -3,9 +3,14 @@ $(document).ready(function() {
   var $messageBox = $form.find('#message-box');
   var $message = $messageBox.find('.message');
 
+  var clearForm = function() {
+    $form[0].reset();
+  };
+
   var showSuccessMessage = function() {
     $messageBox.addClass('success');
     $message.text('Thanks for subscribing!');
+    clearForm();
   };
 
   var showErrorMessage = function() {
